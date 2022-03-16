@@ -46,7 +46,7 @@ SCRIPT_DIR="${TPREFIX}/usr/etc/proot-distro/"
 
 # UDROID_REPO_URL & FSM_URL are github repo urls later used to clone the code
 UDROID_REPO_URL="https://github.com/MDRONi5/Test/ubuntu-on-android"
-FSM_URL="https://github.com/MDRONi5/Test/fs-manager-udroid"
+FSM_URL="https://github.com/MDRONi5/Test2/fs-manager-udroid"
 
 
 
