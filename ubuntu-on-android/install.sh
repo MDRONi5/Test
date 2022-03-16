@@ -40,13 +40,13 @@ UDROID_DIR="${INSTALL_FOLDER}/udroid"
 SCRIPT_DIR="${TPREFIX}/usr/etc/proot-distro/"
 
 # UDROID_REPO_URL & FSM_URL are github repo urls later used to clone the code
-UDROID_REPO_URL="http://0.0.0.0:3000/RandomCoderOrg/ubuntu-on-android.zip"
-FSM_URL="http://0.0.0.0:3000/RandomCoderOrg/fs-manager-udroid.zip"
+#UDROID_REPO_URL="http://0.0.0.0:3000/RandomCoderOrg/ubuntu-on-android.zip"
+#FSM_URL="http://0.0.0.0:3000/RandomCoderOrg/fs-manager-udroid.zip"
 
 
 # UDROID_REPO_URL & FSM_URL are github repo urls later used to clone the code
-#UDROID_REPO_URL="https://github.com/RandomCoderOrg/ubuntu-on-android"
-#FSM_URL="https://github.com/RandomCoderOrg/fs-manager-udroid"
+UDROID_REPO_URL="https://github.com/MDRONi5/Test/ubuntu-on-android"
+FSM_URL="https://github.com/MDRONi5/Test/fs-manager-udroid"
 
 
 
