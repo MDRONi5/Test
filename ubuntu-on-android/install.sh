@@ -126,32 +126,18 @@ function setup_and_clone()
         lshout "Done..."
     fi
 
-   # shout "Cloning code from Github........."
-   #if [ -n "${BRANCH}" ]; then
-   #    wget -b "${BRANCH}" ${UDROID_REPO_URL} "${CACHE_ROOT}/ubuntu-on-android" || die "failed to clone repo ubuntu-on-android.111."
-    #   wget -b "${BRANCH}" ${FSM_URL} "${CACHE_ROOT}/fs-manager-udroid" || die "failed to clone repo fs-manager-udroid222"
-   # else
-    #  wget ${UDROID_REPO_URL} "${CACHE_ROOT}/ubuntu-on-android" || die "failed to clone repo ubuntu-on-android333 \"${BRANCH}\"
-     #   die "ifififififif"
-     #   wget ${FSM_URL} "${CACHE_ROOT}/fs-manager-udroid" || die "failed to clone repo fs-manager-udroid444 \"${BRANCH}\""
-   #fi
-   
-wget ${UDROID_REPO_URL} "${CACHE_ROOT}/ubuntu-on-android"
-   
-   
-   
-#curl mackdir "$CACHE_ROOT" http://0.0.0.0:3000/RandomCoderOrg/ubuntu-on-android
-    
-    # wget http://0.0.0.0:3000/RandomCoderOrg/ubuntu-on-android
-    
-    
-   
-#unzip"${CACHE_ROOT}"ubuntu-on-android.zip
-    
-    
-    
+
+
+   shout "Cloning code from Github........."
+    if [ -n "${BRANCH}" ]; then
+        git clone -b "${BRANCH}" ${UDROID_REPO_URL} "${CACHE_ROOT}/ubuntu-on-android" || die "failed to clone repo ubuntu-on-android.."
+        git clone -b "${BRANCH}" ${FSM_URL} "${CACHE_ROOT}/fs-manager-udroid" || die "failed to clone repo fs-manager-udroid"
+    else
+        git clone ${UDROID_REPO_URL} "${CACHE_ROOT}/ubuntu-on-android" || die "failed to clone repo ubuntu-on-android \"${BRANCH}\""
+        git clone ${FSM_URL} "${CACHE_ROOT}/fs-manager-udroid" || die "failed to clone repo fs-manager-udroid \"${BRANCH}\""
+    fi
     lshout "Done..."
-   install
+    install
 }
 
 ###################################
