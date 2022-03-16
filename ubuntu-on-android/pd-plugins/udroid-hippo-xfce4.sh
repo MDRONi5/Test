@@ -9,7 +9,7 @@ DISTRO_COMMENT="[Testing] A ubuntu 21.04 port with some tweaks"
 TARBALL_STRIP_OPT=0
 
 
-TARBALL_URL['aarch64']="http://0.0.0.0:3000/RandomCoderOrg/ubuntu-21.04-xfce4-rootfs-v01-arm64.tar.gz"
+TARBALL_URL['aarch64']="http://0.0.0.0:3000/RandomCoderOrg/hippo-arm64-v02-xfce4.tar.gz"
 
 #TARBALL_URL['aarch64']="https://github.com/RandomCoderOrg/ubuntu-on-android/releases/download/v01-xfce4/ubuntu-21.04-xfce4-rootfs-v01-arm64.tar.gz"
 
